@@ -1,0 +1,759 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03D77125D59C8E294F3A75B7 /* ReservationSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE06D62A6B6B49E74AEBE443 /* ReservationSetType.swift */; };
+		1277F7611F8E66AF0060AF58 /* SAPLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */; };
+		2CC6C73F7EB08FA6207ABDBE /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDE40B8EFCEA0E92531312 /* LocalizedStrings.swift */; };
+		39E104FD5B1C70492EF5681C /* ParkingMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30D489E8BD6543E321FB209 /* ParkingMetadata.swift */; };
+		4E61A70E725880A02A9D3C3A /* Parking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEB26F9708FF69045E99EF2 /* Parking.swift */; };
+		65F693DA350225497DDA3291 /* UserSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BB5B2BA6306B1E7A8C5981 /* UserSetType.swift */; };
+		7A1315B91D4B982000A5DA56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1315B81D4B982000A5DA56 /* AppDelegate.swift */; };
+		7A1315C21D4B982000A5DA56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1315C11D4B982000A5DA56 /* Assets.xcassets */; };
+		7A1315C51D4B982000A5DA56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */; };
+		7A16F06D1FD1B3C700D2FABD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7A16F06C1FD1B3C700D2FABD /* README.md */; };
+		7A5744B621DE553600E58C7F /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5744B521DE553600E58C7F /* UITests.swift */; };
+		7ABA471D219D6EAD005B471C /* SAPOData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA4717219D6EAD005B471C /* SAPOData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7ABA471E219D6EAD005B471C /* SAPOfflineOData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA4718219D6EAD005B471C /* SAPOfflineOData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7ABA471F219D6EAD005B471C /* SAPCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA4719219D6EAD005B471C /* SAPCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7ABA4720219D6EAD005B471C /* SAPFioriFlows.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA471A219D6EAD005B471C /* SAPFioriFlows.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7ABA4721219D6EAD005B471C /* SAPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA471B219D6EAD005B471C /* SAPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7ABA4722219D6EAD005B471C /* SAPFiori.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA471C219D6EAD005B471C /* SAPFiori.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7ABA4723219D6EC7005B471C /* SAPOfflineOData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA4718219D6EAD005B471C /* SAPOfflineOData.framework */; };
+		7ABA4724219D6EC7005B471C /* SAPCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA4719219D6EAD005B471C /* SAPCommon.framework */; };
+		7ABA4725219D6EC7005B471C /* SAPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA471B219D6EAD005B471C /* SAPFoundation.framework */; };
+		7ABA4726219D6EC7005B471C /* SAPFioriFlows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA471A219D6EAD005B471C /* SAPFioriFlows.framework */; };
+		7ABA4727219D6EC7005B471C /* SAPFiori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA471C219D6EAD005B471C /* SAPFiori.framework */; };
+		7ABA4728219D6EC7005B471C /* SAPOData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA4717219D6EAD005B471C /* SAPOData.framework */; };
+		7C3C1EEC3EB9D80BC8C223E4 /* OnboardingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C5A012CFA28C639FB8610 /* OnboardingErrorHandler.swift */; };
+		8D61AC9A127DCB3D2ED1C93B /* ParkingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD152052839D4B6F64ACB09 /* ParkingFactory.swift */; };
+		941E71DBD2DF66D59D883FE1 /* ApplicationUIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97331CE0820C286E9D1EF189 /* ApplicationUIManager.swift */; };
+		A0318C98CBBD66FC83DC4F43 /* ParkingStaticResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D67DF12F4A09312CFE655D /* ParkingStaticResolver.swift */; };
+		A8B99817D8E07F3D663C4DBD /* ConfigurationProvider.plist in Sources */ = {isa = PBXBuildFile; fileRef = B603DAF631C6C9B02988E297 /* ConfigurationProvider.plist */; };
+		BC7FC7EDB763907431165212 /* LotSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD0EBA0D3FF5B344849FAC5 /* LotSetType.swift */; };
+		C4C5BF1F0816A99FE0291803 /* OnboardingFlowProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73AB4CA2B9A3BCA6CE97254 /* OnboardingFlowProvider.swift */; };
+		CBCA7A991E3778A9001AF49E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCA7A9B1E3778A9001AF49E /* Main.storyboard */; };
+		D0944C890D3233440782FADD /* ParkingMetadataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021AE80F8A0B6FB5C92FAD69 /* ParkingMetadataParser.swift */; };
+		D60199AA220D50DB00B0A157 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60199A9220D50DB00B0A157 /* MapViewController.swift */; };
+		D60199B3220D515E00B0A157 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60199AC220D515E00B0A157 /* Constants.swift */; };
+		D60199B4220D515E00B0A157 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60199AD220D515E00B0A157 /* UserDefaults.swift */; };
+		D60199B5220D515E00B0A157 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60199AE220D515E00B0A157 /* UIViewController.swift */; };
+		D60199B6220D515E00B0A157 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60199AF220D515E00B0A157 /* UIDevice.swift */; };
+		D60199B7220D515E00B0A157 /* UITableView+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60199B0220D515E00B0A157 /* UITableView+UICollectionView.swift */; };
+		D60199B8220D515E00B0A157 /* CGAffineTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60199B1220D515E00B0A157 /* CGAffineTransform.swift */; };
+		D60199B9220D515E00B0A157 /* ReusableView+NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60199B2220D515E00B0A157 /* ReusableView+NibLoadableView.swift */; };
+		D60199C0220D518400B0A157 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60199BA220D518400B0A157 /* GradientView.swift */; };
+		D60199C1220D518400B0A157 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60199BC220D518400B0A157 /* DesignableView.swift */; };
+		D60199C2220D518400B0A157 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60199BD220D518400B0A157 /* TextField.swift */; };
+		D60199C3220D518400B0A157 /* DesignableTitledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60199BE220D518400B0A157 /* DesignableTitledView.swift */; };
+		D60199C4220D518400B0A157 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60199BF220D518400B0A157 /* Button.swift */; };
+		D60199C7220D51AF00B0A157 /* ColorsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60199C6220D51AF00B0A157 /* ColorsConstants.swift */; };
+		E9164C2FADD20159CA8E5877 /* ParkingMetadataChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF00F5D2D079D64BC7BAD84 /* ParkingMetadataChanges.swift */; };
+		F12646590F3A1B78196B0C3E /* AreaSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB075B46092FD9F7831747A /* AreaSetType.swift */; };
+		F645F9AB7F58236CE2CCCE67 /* ParkingMetadataText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096842C546E9A38E4668EA92 /* ParkingMetadataText.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A5744B821DE553700E58C7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A1315AD1D4B982000A5DA56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A1315B41D4B982000A5DA56;
+			remoteInfo = GoParking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		758AC1C31D5A265200311F39 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7ABA471D219D6EAD005B471C /* SAPOData.framework in Embed Frameworks */,
+				7ABA471E219D6EAD005B471C /* SAPOfflineOData.framework in Embed Frameworks */,
+				7ABA471F219D6EAD005B471C /* SAPCommon.framework in Embed Frameworks */,
+				7ABA4720219D6EAD005B471C /* SAPFioriFlows.framework in Embed Frameworks */,
+				7ABA4721219D6EAD005B471C /* SAPFoundation.framework in Embed Frameworks */,
+				7ABA4722219D6EAD005B471C /* SAPFiori.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		021AE80F8A0B6FB5C92FAD69 /* ParkingMetadataParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParkingMetadataParser.swift; path = "Proxy Classes/internal/ParkingMetadataParser.swift"; sourceTree = "<group>"; };
+		096842C546E9A38E4668EA92 /* ParkingMetadataText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParkingMetadataText.swift; path = "Proxy Classes/internal/ParkingMetadataText.swift"; sourceTree = "<group>"; };
+		0AB075B46092FD9F7831747A /* AreaSetType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AreaSetType.swift; path = "Proxy Classes/public/AreaSetType.swift"; sourceTree = "<group>"; };
+		1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SAPLogo@2x.png"; sourceTree = "<group>"; };
+		4EF00F5D2D079D64BC7BAD84 /* ParkingMetadataChanges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParkingMetadataChanges.swift; path = "Proxy Classes/internal/ParkingMetadataChanges.swift"; sourceTree = "<group>"; };
+		634C5A012CFA28C639FB8610 /* OnboardingErrorHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingErrorHandler.swift; path = Onboarding/OnboardingErrorHandler.swift; sourceTree = "<group>"; };
+		64BB5B2BA6306B1E7A8C5981 /* UserSetType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserSetType.swift; path = "Proxy Classes/public/UserSetType.swift"; sourceTree = "<group>"; };
+		7A1315B51D4B982000A5DA56 /* GoParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A1315B81D4B982000A5DA56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A1315C11D4B982000A5DA56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A1315C41D4B982000A5DA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A1315C61D4B982000A5DA56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A16F06C1FD1B3C700D2FABD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7A5744B321DE553600E58C7F /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A5744B521DE553600E58C7F /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
+		7A5744B721DE553700E58C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ABA4717219D6EAD005B471C /* SAPOData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPOData.framework; sourceTree = "<group>"; };
+		7ABA4718219D6EAD005B471C /* SAPOfflineOData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPOfflineOData.framework; sourceTree = "<group>"; };
+		7ABA4719219D6EAD005B471C /* SAPCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPCommon.framework; sourceTree = "<group>"; };
+		7ABA471A219D6EAD005B471C /* SAPFioriFlows.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPFioriFlows.framework; sourceTree = "<group>"; };
+		7ABA471B219D6EAD005B471C /* SAPFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPFoundation.framework; sourceTree = "<group>"; };
+		7ABA471C219D6EAD005B471C /* SAPFiori.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPFiori.framework; sourceTree = "<group>"; };
+		7FD0EBA0D3FF5B344849FAC5 /* LotSetType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LotSetType.swift; path = "Proxy Classes/public/LotSetType.swift"; sourceTree = "<group>"; };
+		97331CE0820C286E9D1EF189 /* ApplicationUIManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApplicationUIManager.swift; path = Onboarding/ApplicationUIManager.swift; sourceTree = "<group>"; };
+		A73AB4CA2B9A3BCA6CE97254 /* OnboardingFlowProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingFlowProvider.swift; path = Onboarding/OnboardingFlowProvider.swift; sourceTree = "<group>"; };
+		A8EDE40B8EFCEA0E92531312 /* LocalizedStrings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
+		B603DAF631C6C9B02988E297 /* ConfigurationProvider.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = ConfigurationProvider.plist; path = Onboarding/ConfigurationProvider.plist; sourceTree = "<group>"; };
+		CB909D801E38CA8800218154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D30D489E8BD6543E321FB209 /* ParkingMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParkingMetadata.swift; path = "Proxy Classes/public/ParkingMetadata.swift"; sourceTree = "<group>"; };
+		D60199A9220D50DB00B0A157 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D60199AC220D515E00B0A157 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D60199AD220D515E00B0A157 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		D60199AE220D515E00B0A157 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		D60199AF220D515E00B0A157 /* UIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		D60199B0220D515E00B0A157 /* UITableView+UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+UICollectionView.swift"; sourceTree = "<group>"; };
+		D60199B1220D515E00B0A157 /* CGAffineTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGAffineTransform.swift; sourceTree = "<group>"; };
+		D60199B2220D515E00B0A157 /* ReusableView+NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReusableView+NibLoadableView.swift"; sourceTree = "<group>"; };
+		D60199BA220D518400B0A157 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		D60199BC220D518400B0A157 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		D60199BD220D518400B0A157 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		D60199BE220D518400B0A157 /* DesignableTitledView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTitledView.swift; sourceTree = "<group>"; };
+		D60199BF220D518400B0A157 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		D60199C6220D51AF00B0A157 /* ColorsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsConstants.swift; sourceTree = "<group>"; };
+		D6D67DF12F4A09312CFE655D /* ParkingStaticResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParkingStaticResolver.swift; path = "Proxy Classes/internal/ParkingStaticResolver.swift"; sourceTree = "<group>"; };
+		EAEB26F9708FF69045E99EF2 /* Parking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parking.swift; path = "Proxy Classes/public/Parking.swift"; sourceTree = "<group>"; };
+		FAD152052839D4B6F64ACB09 /* ParkingFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParkingFactory.swift; path = "Proxy Classes/internal/ParkingFactory.swift"; sourceTree = "<group>"; };
+		FE06D62A6B6B49E74AEBE443 /* ReservationSetType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReservationSetType.swift; path = "Proxy Classes/public/ReservationSetType.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A1315B21D4B982000A5DA56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ABA4723219D6EC7005B471C /* SAPOfflineOData.framework in Frameworks */,
+				7ABA4724219D6EC7005B471C /* SAPCommon.framework in Frameworks */,
+				7ABA4725219D6EC7005B471C /* SAPFoundation.framework in Frameworks */,
+				7ABA4726219D6EC7005B471C /* SAPFioriFlows.framework in Frameworks */,
+				7ABA4727219D6EC7005B471C /* SAPFiori.framework in Frameworks */,
+				7ABA4728219D6EC7005B471C /* SAPOData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A5744B021DE553600E58C7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		066B18AFD5BF41314A308C2E /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				096842C546E9A38E4668EA92 /* ParkingMetadataText.swift */,
+				D6D67DF12F4A09312CFE655D /* ParkingStaticResolver.swift */,
+				FAD152052839D4B6F64ACB09 /* ParkingFactory.swift */,
+				4EF00F5D2D079D64BC7BAD84 /* ParkingMetadataChanges.swift */,
+				021AE80F8A0B6FB5C92FAD69 /* ParkingMetadataParser.swift */,
+			);
+			name = internal;
+			sourceTree = "<group>";
+		};
+		0D26E31039BAA7DF39DF7886 /* Proxy Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7DA0F1328FF837EABED8ED45 /* public */,
+				066B18AFD5BF41314A308C2E /* internal */,
+			);
+			name = "Proxy Classes";
+			sourceTree = "<group>";
+		};
+		7A1315AC1D4B982000A5DA56 = {
+			isa = PBXGroup;
+			children = (
+				7A16F06C1FD1B3C700D2FABD /* README.md */,
+				7A1315B71D4B982000A5DA56 /* GoParking */,
+				7A5744B421DE553600E58C7F /* UITests */,
+				7A1315B61D4B982000A5DA56 /* Products */,
+				7A1315CC1D4B990B00A5DA56 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7A1315B61D4B982000A5DA56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A1315B51D4B982000A5DA56 /* GoParking.app */,
+				7A5744B321DE553600E58C7F /* UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A1315B71D4B982000A5DA56 /* GoParking */ = {
+			isa = PBXGroup;
+			children = (
+				7A1315B81D4B982000A5DA56 /* AppDelegate.swift */,
+				CBCA7A9B1E3778A9001AF49E /* Main.storyboard */,
+				7A1315C11D4B982000A5DA56 /* Assets.xcassets */,
+				7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */,
+				1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */,
+				7A1315C61D4B982000A5DA56 /* Info.plist */,
+				D60199C8220D51B200B0A157 /* Resources */,
+				D60199C5220D518700B0A157 /* View */,
+				D60199AB220D514300B0A157 /* Helpers */,
+				D6418766220CC9A6008C54CC /* Controller */,
+				0D26E31039BAA7DF39DF7886 /* Proxy Classes */,
+				F7F723A6319871A4177E1940 /* Onboarding */,
+				A8EDE40B8EFCEA0E92531312 /* LocalizedStrings.swift */,
+			);
+			path = GoParking;
+			sourceTree = "<group>";
+		};
+		7A1315CC1D4B990B00A5DA56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ABA4719219D6EAD005B471C /* SAPCommon.framework */,
+				7ABA471C219D6EAD005B471C /* SAPFiori.framework */,
+				7ABA471A219D6EAD005B471C /* SAPFioriFlows.framework */,
+				7ABA471B219D6EAD005B471C /* SAPFoundation.framework */,
+				7ABA4717219D6EAD005B471C /* SAPOData.framework */,
+				7ABA4718219D6EAD005B471C /* SAPOfflineOData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A5744B421DE553600E58C7F /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				7A5744B521DE553600E58C7F /* UITests.swift */,
+				7A5744B721DE553700E58C7F /* Info.plist */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		7DA0F1328FF837EABED8ED45 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				64BB5B2BA6306B1E7A8C5981 /* UserSetType.swift */,
+				FE06D62A6B6B49E74AEBE443 /* ReservationSetType.swift */,
+				EAEB26F9708FF69045E99EF2 /* Parking.swift */,
+				D30D489E8BD6543E321FB209 /* ParkingMetadata.swift */,
+				7FD0EBA0D3FF5B344849FAC5 /* LotSetType.swift */,
+				0AB075B46092FD9F7831747A /* AreaSetType.swift */,
+			);
+			name = public;
+			sourceTree = "<group>";
+		};
+		D60199AB220D514300B0A157 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D60199B1220D515E00B0A157 /* CGAffineTransform.swift */,
+				D60199AC220D515E00B0A157 /* Constants.swift */,
+				D60199B2220D515E00B0A157 /* ReusableView+NibLoadableView.swift */,
+				D60199AF220D515E00B0A157 /* UIDevice.swift */,
+				D60199B0220D515E00B0A157 /* UITableView+UICollectionView.swift */,
+				D60199AE220D515E00B0A157 /* UIViewController.swift */,
+				D60199AD220D515E00B0A157 /* UserDefaults.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		D60199BB220D518400B0A157 /* IB */ = {
+			isa = PBXGroup;
+			children = (
+				D60199BC220D518400B0A157 /* DesignableView.swift */,
+				D60199BD220D518400B0A157 /* TextField.swift */,
+				D60199BE220D518400B0A157 /* DesignableTitledView.swift */,
+				D60199BF220D518400B0A157 /* Button.swift */,
+			);
+			path = IB;
+			sourceTree = "<group>";
+		};
+		D60199C5220D518700B0A157 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D60199BB220D518400B0A157 /* IB */,
+				D60199BA220D518400B0A157 /* GradientView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D60199C8220D51B200B0A157 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D60199C6220D51AF00B0A157 /* ColorsConstants.swift */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D6418766220CC9A6008C54CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D60199A9220D50DB00B0A157 /* MapViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F7F723A6319871A4177E1940 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A73AB4CA2B9A3BCA6CE97254 /* OnboardingFlowProvider.swift */,
+				97331CE0820C286E9D1EF189 /* ApplicationUIManager.swift */,
+				634C5A012CFA28C639FB8610 /* OnboardingErrorHandler.swift */,
+				B603DAF631C6C9B02988E297 /* ConfigurationProvider.plist */,
+			);
+			name = Onboarding;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A1315B41D4B982000A5DA56 /* GoParking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A1315C91D4B982000A5DA56 /* Build configuration list for PBXNativeTarget "GoParking" */;
+			buildPhases = (
+				237616AD21AECC9A00B6F8AD /* Refresh SAP Cloud Platform SDK for iOS Frameworks */,
+				7A1315B11D4B982000A5DA56 /* Sources */,
+				7A1315B21D4B982000A5DA56 /* Frameworks */,
+				7A1315B31D4B982000A5DA56 /* Resources */,
+				758AC1C31D5A265200311F39 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoParking;
+			productName = GoParking;
+			productReference = 7A1315B51D4B982000A5DA56 /* GoParking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A5744B221DE553600E58C7F /* UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A5744BC21DE553700E58C7F /* Build configuration list for PBXNativeTarget "UITests" */;
+			buildPhases = (
+				7A5744AF21DE553600E58C7F /* Sources */,
+				7A5744B021DE553600E58C7F /* Frameworks */,
+				7A5744B121DE553600E58C7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A5744B921DE553700E58C7F /* PBXTargetDependency */,
+			);
+			name = UITests;
+			productName = UITests;
+			productReference = 7A5744B321DE553600E58C7F /* UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A1315AD1D4B982000A5DA56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = SAP;
+				TargetAttributes = {
+					7A1315B41D4B982000A5DA56 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = B8UCDP9M4Y;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+					7A5744B221DE553600E58C7F = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7A1315B41D4B982000A5DA56;
+					};
+				};
+			};
+			buildConfigurationList = 7A1315B01D4B982000A5DA56 /* Build configuration list for PBXProject "GoParking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A1315AC1D4B982000A5DA56;
+			productRefGroup = 7A1315B61D4B982000A5DA56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A1315B41D4B982000A5DA56 /* GoParking */,
+				7A5744B221DE553600E58C7F /* UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A1315B31D4B982000A5DA56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A16F06D1FD1B3C700D2FABD /* README.md in Resources */,
+				7A1315C51D4B982000A5DA56 /* LaunchScreen.storyboard in Resources */,
+				7A1315C21D4B982000A5DA56 /* Assets.xcassets in Resources */,
+				CBCA7A991E3778A9001AF49E /* Main.storyboard in Resources */,
+				1277F7611F8E66AF0060AF58 /* SAPLogo@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A5744B121DE553600E58C7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		237616AD21AECC9A00B6F8AD /* Refresh SAP Cloud Platform SDK for iOS Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Refresh SAP Cloud Platform SDK for iOS Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "sh ./scripts/refreshframeworks.sh\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A1315B11D4B982000A5DA56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A1315B91D4B982000A5DA56 /* AppDelegate.swift in Sources */,
+				D60199B9220D515E00B0A157 /* ReusableView+NibLoadableView.swift in Sources */,
+				D60199B3220D515E00B0A157 /* Constants.swift in Sources */,
+				D60199C2220D518400B0A157 /* TextField.swift in Sources */,
+				65F693DA350225497DDA3291 /* UserSetType.swift in Sources */,
+				F645F9AB7F58236CE2CCCE67 /* ParkingMetadataText.swift in Sources */,
+				D60199B7220D515E00B0A157 /* UITableView+UICollectionView.swift in Sources */,
+				A0318C98CBBD66FC83DC4F43 /* ParkingStaticResolver.swift in Sources */,
+				D60199B6220D515E00B0A157 /* UIDevice.swift in Sources */,
+				8D61AC9A127DCB3D2ED1C93B /* ParkingFactory.swift in Sources */,
+				E9164C2FADD20159CA8E5877 /* ParkingMetadataChanges.swift in Sources */,
+				D60199C3220D518400B0A157 /* DesignableTitledView.swift in Sources */,
+				D60199C0220D518400B0A157 /* GradientView.swift in Sources */,
+				D60199B8220D515E00B0A157 /* CGAffineTransform.swift in Sources */,
+				03D77125D59C8E294F3A75B7 /* ReservationSetType.swift in Sources */,
+				4E61A70E725880A02A9D3C3A /* Parking.swift in Sources */,
+				39E104FD5B1C70492EF5681C /* ParkingMetadata.swift in Sources */,
+				D60199C7220D51AF00B0A157 /* ColorsConstants.swift in Sources */,
+				BC7FC7EDB763907431165212 /* LotSetType.swift in Sources */,
+				D0944C890D3233440782FADD /* ParkingMetadataParser.swift in Sources */,
+				F12646590F3A1B78196B0C3E /* AreaSetType.swift in Sources */,
+				C4C5BF1F0816A99FE0291803 /* OnboardingFlowProvider.swift in Sources */,
+				D60199B5220D515E00B0A157 /* UIViewController.swift in Sources */,
+				D60199AA220D50DB00B0A157 /* MapViewController.swift in Sources */,
+				941E71DBD2DF66D59D883FE1 /* ApplicationUIManager.swift in Sources */,
+				D60199B4220D515E00B0A157 /* UserDefaults.swift in Sources */,
+				D60199C4220D518400B0A157 /* Button.swift in Sources */,
+				2CC6C73F7EB08FA6207ABDBE /* LocalizedStrings.swift in Sources */,
+				7C3C1EEC3EB9D80BC8C223E4 /* OnboardingErrorHandler.swift in Sources */,
+				A8B99817D8E07F3D663C4DBD /* ConfigurationProvider.plist in Sources */,
+				D60199C1220D518400B0A157 /* DesignableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A5744AF21DE553600E58C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A5744B621DE553600E58C7F /* UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A5744B921DE553700E58C7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A1315B41D4B982000A5DA56 /* GoParking */;
+			targetProxy = 7A5744B821DE553700E58C7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A1315C41D4B982000A5DA56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CBCA7A9B1E3778A9001AF49E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB909D801E38CA8800218154 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A1315C71D4B982000A5DA56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A1315C81D4B982000A5DA56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A1315CA1D4B982000A5DA56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = B8UCDP9M4Y;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GoParking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dcoders.GoParking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		7A1315CB1D4B982000A5DA56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = B8UCDP9M4Y;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GoParking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dcoders.GoParking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		7A5744BA21DE553700E58C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoParking;
+			};
+			name = Debug;
+		};
+		7A5744BB21DE553700E58C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoParking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A1315B01D4B982000A5DA56 /* Build configuration list for PBXProject "GoParking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1315C71D4B982000A5DA56 /* Debug */,
+				7A1315C81D4B982000A5DA56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A1315C91D4B982000A5DA56 /* Build configuration list for PBXNativeTarget "GoParking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1315CA1D4B982000A5DA56 /* Debug */,
+				7A1315CB1D4B982000A5DA56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A5744BC21DE553700E58C7F /* Build configuration list for PBXNativeTarget "UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A5744BA21DE553700E58C7F /* Debug */,
+				7A5744BB21DE553700E58C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A1315AD1D4B982000A5DA56 /* Project object */;
+}
